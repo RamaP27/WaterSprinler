@@ -1,0 +1,20 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.git
+.gitignore
+.DS_Store
+node_modules/
+# CSV files (exclude training data, but allow temp files to be created at runtime)
+*.csv
+temp_*.csv
+# IMPORTANT: Do NOT exclude artifacts/ or *.h5 - these are needed for the app to work!
+# artifacts/  # COMMENTED OUT - needed for model deployment
+# *.h5        # COMMENTED OUT - needed for model deployment
+.gcloudignore
+

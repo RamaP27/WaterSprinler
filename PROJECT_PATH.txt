@@ -1,0 +1,57 @@
+═══════════════════════════════════════════════════════════════
+   WATER SPRINKLER PREDICTION SYSTEM - PROJECT LOCATION
+═══════════════════════════════════════════════════════════════
+
+📁 PROJECT PATH:
+   /Users/ramakp/water-sprinkler-prediction-system
+
+═══════════════════════════════════════════════════════════════
+   PROJECT STRUCTURE
+═══════════════════════════════════════════════════════════════
+
+Core Application:
+  ✅ app.py              - Flask API backend
+  ✅ model.py            - LSTM model class
+  ✅ main.py             - Cloud Run entry point
+  ✅ requirements.txt    - Python dependencies
+
+Web UI:
+  ✅ templates/index.html - Main UI template
+  ✅ static/style.css     - Styles
+  ✅ static/script.js     - Frontend JavaScript
+
+Deployment:
+  ✅ Dockerfile          - Container configuration
+  ✅ app.yaml            - App Engine configuration
+  ✅ firebase.json       - Firebase Hosting config
+  ✅ deploy.sh           - Deployment script (executable)
+  ✅ .firebaserc         - Firebase project config
+
+Configuration:
+  ✅ .gitignore          - Git ignore rules
+  ✅ .gcloudignore      - GCloud ignore rules
+  ✅ .dockerignore       - Docker ignore rules
+
+Documentation:
+  ✅ README.md           - Main documentation
+  ✅ DEPLOYMENT.md       - Deployment guide
+  ✅ QUICKSTART.md       - Quick start guide
+
+═══════════════════════════════════════════════════════════════
+   QUICK START
+═══════════════════════════════════════════════════════════════
+
+1. Navigate to project:
+   cd /Users/ramakp/water-sprinkler-prediction-system
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Run the application:
+   python app.py
+
+4. Open in browser:
+   http://localhost:5000
+
+═══════════════════════════════════════════════════════════════
+

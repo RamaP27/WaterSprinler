@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Sprinkler Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💧 Water Sprinkler Prediction System</h1>
+            <p class="subtitle">AI-Powered LSTM Model for Smart Irrigation</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Prediction Section -->
+            <section class="card prediction-section">
+                <h2>Make Prediction</h2>
+                <div id="status-indicator" class="status-indicator">
+                    <span id="status-text">Loading model status...</span>
+                </div>
+                <form id="prediction-form">
+                    <div id="features-container" class="features-grid">
+                        <!-- Features will be dynamically loaded here -->
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="predict-btn">
+                        Predict Status
+                    </button>
+                </form>
+                <div id="prediction-result" class="result-card hidden"></div>
+            </section>
+
+            <!-- Training Section -->
+            <section class="card training-section">
+                <h2>Train Model</h2>
+                <p class="info-text">Upload a CSV file to train a new model. The CSV should have features and a 'Status' column.</p>
+                <form id="training-form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="csv-file">CSV File:</label>
+                        <input type="file" id="csv-file" name="file" accept=".csv" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="epochs">Epochs:</label>
+                            <input type="number" id="epochs" name="epochs" value="50" min="1" max="200">
+                        </div>
+                        <div class="form-group">
+                            <label for="batch-size">Batch Size:</label>
+                            <input type="number" id="batch-size" name="batch_size" value="32" min="1" max="128">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-secondary" id="train-btn">
+                        Train Model
+                    </button>
+                </form>
+                <div id="training-result" class="result-card hidden"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
