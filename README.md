@@ -182,3 +182,7 @@ Soil Moisture,Temperature,Humidity,Status
 
 MIT
 
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/e3049155-f9ad-4003-82a2-70c984ff4dec" />
+
+
+
